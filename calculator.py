@@ -9,6 +9,15 @@ One function per operation, in order.
 #     pass
 
 import math
+
+def square_root(a):
+    if a<0:
+        raise ValueError("a cannot be a negative number!")
+    return math.sqrt(a)# raise ValueError if a < 0
+
+def hypotenuse(a, b):
+    return math.hypot(a, b) # can have negative nums
+
 def add(a, b):
     return a + b
 
