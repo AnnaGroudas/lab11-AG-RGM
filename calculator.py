@@ -6,6 +6,13 @@ One function per operation, in order.
 """
 # First example
 
+
+import math
+
+
+# def add(a, b):
+#     pass
+
 import math
 
 def add(a, b):
@@ -18,21 +25,20 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    if b ==0:
+    if a ==0:
         raise ZeroDivisionError("Cannot divide by zero!")
     return b/a
 
 
 def log(a, b):
-    try:
-        return math.log(a,b)
-    except ValueError:
-        raise ValueError("That’s not a valid number!")
+    if a<=0:
+        raise ValueError("a must be a positive value!")
+    return math.log(b,a) # use math library + raise ValueError
+
 
 
 def exp(a, b):
     return a**b
-
 
 
 
