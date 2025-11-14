@@ -1,3 +1,7 @@
+# https://github.com/AnnaGroudas/lab11-AG-RGM
+# Partner 1: Anna Groudas
+# Partner 2: Riya George Mathew
+
 import unittest
 from calculator import *
 
